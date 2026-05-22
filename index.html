@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Havyn - Download</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #0B0B0F;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.3s ease;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Logo + title */
+  .logo-header {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+  }
+
+  .logo-header img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .logo-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+
+  .logo-header:hover img {
+    transform: scale(1.05);
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  /* Features */
+  .features {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .feature-card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    padding: 1rem 1.5rem;
+    border-radius: 14px;
+    min-width: 160px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    background: rgba(255,255,255,0.1);
+  }
+
+  .feature-card svg {
+    width: 36px;
+    height: 36px;
+    fill: currentColor;
+  }
+
+  .feature-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .feature-card p {
+    font-size: 0.85rem;
+    color: #ccc;
+    margin: 0;
+  }
+
+  /* Download button */
+  .download-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #FF4D5A, #FF0033);
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    margin: 2rem 0;
+    transition: all 0.3s ease;
+  }
+
+  .download-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+  }
+
+  /* Panels */
+  .panel-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .panel {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(14px);
+    border-radius: 14px;
+    padding: 1rem 1.5rem;
+    min-width: 250px;
+    flex: 1 1 250px;
+    transition: all 0.3s ease;
+  }
+
+  .panel:hover {
+    transform: translateY(-3px) scale(1.01);
+    background: rgba(255,255,255,0.1);
+  }
+
+  .panel h4 {
+    margin-bottom: 0.5rem;
+  }
+
+  .panel p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 0.3rem 0;
+  }
+
+  .footer {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .features, .panel-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .download-btn {
+      width: 80%;
+      text-align: center;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- Logo + Title -->
+  <div class="logo-header">
+    <img src="Beyond (2).png" alt="Havyn Logo">
+    <h1>Havyn</h1>
+  </div>
+  <div class="hero-text">
+    The social watch platform for movies, shows, and everything in between.
+  </div>
+
+  <!-- Features -->
+  <div class="features">
+    <div class="feature-card" style="color:#FF4D5A;">
+      <svg viewBox="0 0 24 24"><path d="M12 4C9 4 6 7 6 10s3 6 6 6 6-3 6-6-3-6-6-6zm0 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+      <h3>Synchronized Playback</h3>
+      <p>Everyone watches in perfect sync.</p>
+    </div>
+    <div class="feature-card" style="color:#9B59B6;">
+      <svg viewBox="0 0 24 24"><path d="M4 4h16v12H5.17L4 17.17V4z"/></svg>
+      <h3>Chat & Reactions</h3>
+      <p>Share messages, emojis, and reactions.</p>
+    </div>
+    <div class="feature-card" style="color:#3498DB;">
+      <svg viewBox="0 0 24 24"><path d="M17 10.5V6c0-1.1-.9-2-2-2H5C3.9 4 3 4.9 3 6v12c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-4.5l4 4v-11l-4 4z"/></svg>
+      <h3>Voice & Video Calls</h3>
+      <p>Up to 4 participants seamlessly.</p>
+    </div>
+  </div>
+
+  <!-- Download Button -->
+  <a class="download-btn" href="/mnt/data/image.png" download>
+    Download Havyn (150mb)
+  </a>
+
+  <!-- System + Privacy Panels -->
+  <div class="panel-container">
+    <div class="panel">
+      <h4>System Requirements</h4>
+      <p>OS: Windows 10/11 (64-bit)</p>
+      <p>CPU: Intel or AMD 64-bit</p>
+      <p>RAM: 4 GB or more</p>
+      <p>Storage: 300 MB available</p>
+      <p>Network: Stable internet connection</p>
+    </div>
+    <div class="panel">
+      <h4>Notes & Privacy</h4>
+      <p>Free MVP release.</p>
+      <p>No ads or tracking.</p>
+      <p>Safe and verified download.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2026 Havyn
+  </div>
+</div>
+</body>
+</html>
