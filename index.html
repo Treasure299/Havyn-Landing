@@ -785,13 +785,40 @@
       grid-column: 1 / -1;
       width: 100%;
       min-height: 36px;
-      margin-top: 4px;
+      margin-top: 2px;
       font-size: 13px;
     }
 
-    .download-note {
+    .download-meta {
       grid-column: 1 / -1;
-      margin: -4px 0 0;
+      display: grid;
+      gap: 7px;
+      margin: -2px 0 0;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .download-chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 999px;
+      padding: 0 9px;
+      color: rgba(255,255,255,0.78);
+      background:
+        radial-gradient(circle at 0 0, rgba(255,51,71,0.18), transparent 60%),
+        rgba(255,255,255,0.045);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .download-hint {
+      margin: 0;
       color: rgba(255,255,255,0.54);
       font-size: 11px;
       line-height: 1.45;
@@ -1223,9 +1250,15 @@
         </span>
         <div>
           <h3>macOS</h3>
-          <p>For Apple Silicon & Intel</p>
+          <p>Choose your Mac build</p>
         </div>
-        <p class="download-note">Includes two files: Apple Silicon and Intel. Install only the one that matches your Mac.</p>
+        <div class="download-meta">
+          <div class="chip-row" aria-label="Mac downloads included">
+            <span class="download-chip">Apple Silicon</span>
+            <span class="download-chip">Intel</span>
+          </div>
+          <p class="download-hint">The download includes both DMGs. Install only the one that matches your Mac.</p>
+        </div>
         <!-- Update the Mega mac download link below when the file changes -->
         <a class="download-btn" href="https://mega.nz/file/JCkBTJCC#h2zi64rSRIRpe3EAq1-X2GNnlEvaFfYYCVOcbnoIRVQ" target="_blank" rel="noopener">Download for Mac (246 MB)</a>
       </article>
